@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="#1a9bfc"
+        app:tabIndicatorHeight="3dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="#1a9bfc" />
+
+    <!-- 下方滚动的下划线颜色  -->
+    app:tabIndicatorColor="#33aa22"
+    <!-- 下方指示条的高度  -->
+    app:tabIndicatorHeight="3dp"
+    <!-- tab被选中后，文字的颜色  -->
+    app:tabSelectedTextColor="#33aa22"
+    <!-- tab中字体的颜色  -->
+    app:tabTextColor="#33aa22"
+    <!-- tab中设置横向scroll  -->
+    app:tabMode="scrollable"
+    />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
